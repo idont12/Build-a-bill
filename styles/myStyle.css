@@ -247,7 +247,7 @@ button {
     transform: translateX(var(--sliderCorrectSize));
 }
 
-#actionButton {
+.actionButton {
     width: 80%;
     position: sticky;
     text-align: center;
@@ -256,7 +256,7 @@ button {
     display:none;
 }
 
-.phoneMode #actionButton {
+.phoneMode .actionButton {
     display: block;
 }
 /*scrool part*/
@@ -299,8 +299,14 @@ button {
         transform: scale(1.2);
     }
 
+.phoneMode #backButton:hover, .phoneMode #iconManu:hover span, .phoneMode #stopAnimation:hover {
+    color: var(--backColorLight);
+    transform: scale(1);
+}
+
 #animationPage main {
     margin: 0px 2vw;
+    margin-bottom: 10vh;
 }
 .sideMenu main {
     margin: 0px;
@@ -331,6 +337,7 @@ button {
     border:var(--backColorHover);
     font-weight:bold;
 }
+
 
     .manuButton {
         background-color: transparent;
@@ -383,6 +390,13 @@ button:hover, label:hover, button:focus-visible, #iconManu:hover span, #iconManu
     background-color: var(--backColorHover);
     cursor: pointer;
     color: black;
+}
+
+.phoneMode button:hover, .phoneMode label:hover, .phoneMode button:focus-visible, .phoneMode #iconManu:hover span, .phoneMode #iconManu:hover span::after, .phoneMode #iconManu:hover span::before, .phoneMode #stopAnimation:hover span::after, .phoneMode #stopAnimation:hover span::before {
+    filter: opacity(1);
+    background-color: var(--backgroundColorAll);
+    cursor: pointer;
+    color: var(--backColorLight);
 }
 
 .cardImg label {

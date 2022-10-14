@@ -323,9 +323,9 @@ function mouseDitactive(event) {
 /*processSelction*/
 function processSelction(value) {
     document.documentElement.style.setProperty("--processSelctionValue", value);
-    var textOption = ["<strong>Add images</strong> - the first step you need to do, if you want to create your oun Bill glitch effect, is to add your oun images. You do it by clicking on the plus button and then pic the image from your computer. If you will want to delete an image you have a delete button as you mark/put your mouse over the image.",
-        "<strong> Animation Settings</strong> - Once you've added your images you can try and play with the animation settings. The options that will affect are image transition speed, glitch effect speed and glitch effect opacity. When there is an option to change the speed, the speed refers to the time each frame will be displayed.",
-        "<strong>Play animation </strong>–  This is the final step, here you can look at you amazing Bill glitch effect. When you are on this step you can't change any properties but if you will want you can click on the stop animation button in the top left corner of the screen."]
+    var textOption = ["<strong>Add images</strong> - The first step you need to do, if you want to create your own Bill glitch effect, is to add your own images. You do it by clicking on the plus button and then pick the image from your computer. If you want to delete an image you have a delete button as you hover your mouse over the image.",
+        "<strong> Animation Settings</strong> - Once you've added your images you can try and play with the animation settings. The options that can be affected are image transition speed, glitch effect speed and glitch effect opacity. Changing the speed refers to the time each frame will be displayed.",
+        "<strong>Play animation </strong>–  This is the final step, here you can look at your amazing Bill glitch effect. When you are at this step you can't change any properties. if you want you can click on the stop animation button in the top left corner of the screen."]
     document.getElementById("prosessText").innerHTML = textOption[value + 1];
 }
 
@@ -366,6 +366,8 @@ function updateUnlock() {
         
         if (StepUnlock.currectStep >= 0) {
             document.getElementById("unlockManu0").onclick = function () { ChangeLibrary('HomeManu', 'animationPage'); chackUnlockStepup(1); }
+            document.getElementById("nextStep1").onclick = function () { ChangeLibrary('updateLibrary', 'animationPage'); chackUnlockStepup(1); }
+            document.getElementById("nextStep1").classList.remove("lock");
         }
         if (StepUnlock.currectStep == 1) {
             document.getElementById("unlockManu1").onclick = function () { selectImgList('user'); ChangeLibrary('HomeManu', 'displayAnimtaion'); }
@@ -376,6 +378,8 @@ function updateUnlock() {
             document.getElementById("unlockManu" + i).classList.add("lock");
             document.getElementById("unlockManu" + i).onclick = function () { animationCondition(1); }
         }
+        document.getElementById("nextStep1").onclick = function () { animationCondition(1);}
+        document.getElementById("nextStep1").classList.add("lock");
     }
 }
 

@@ -61,7 +61,7 @@
                 <button id="backButton" alt="Close library" onclick="ChangeLibrary('updateLibrary', 'HomeManu')"><</button>
                 <div>
                     <h1 id="titel">Add images</h1>
-                    <p>To comlite this step you need to uplode more then 2 images</p>
+                    <p>To complete this step you need to upload more than 2 images</p>
                 </div>
             </div>
             <main>
@@ -69,7 +69,8 @@
 
                 </div>
             </main>
-            <!--<button id="actionButton" onmousedown="phoneDisplayBill('open')" onpointerdown="phoneDisplayBill('open')" onmouseup="phoneDisplayBill('open')" onpointerup ="phoneDisplayBill('open')">
+            <button id="nextStep1" class="actionButton lock" onclick="animationCondition(1)">Next step></button>
+            <!--<button class="actionButton" onmousedown="phoneDisplayBill('open')" onpointerdown="phoneDisplayBill('open')" onmouseup="phoneDisplayBill('open')" onpointerup ="phoneDisplayBill('open')">
                 Display Bill demo <br />(one image only)
             </button>-->
         </div>
@@ -85,7 +86,7 @@
                 <h2>Image</h2>
                 <div>
                     <span>Speed</span>
-                    <input type="range" value="1" min="0.1" max="2" step="0.1" id="imgSpeedRange" oninput="imgSpeedNumDisplay.value=value, changeImgSpeed(value)" >
+                    <input type="range" value="1" min="0.1" max="2" step="0.1" id="imgSpeedRange" oninput="imgSpeedNumDisplay.value=value, changeImgSpeed(value)">
                     <input type="number" id="imgSpeedNumDisplay" min="0.1" max="2" value="1" step="0.1" oninput="imgSpeedRange.value = value, changeImgSpeed(value)">
                     <span style="font-size:small">s</span>
                 </div>
@@ -103,6 +104,7 @@
                     <span style="font-size:small">%</span>
                 </div>
             </main>
+            <button class="actionButton" onclick="selectImgList('user'), ChangeLibrary('animationPage', 'displayAnimtaion')">Play animation</button>
         </div>
 
         
@@ -172,8 +174,8 @@
             <div id="textSection1">
                 <h1>Welcom to build a bill</h1>
                 <p>
-                    here u can create your oun bill glish animation
-                    with few simple step
+                    Here you can create your own bill glish animation
+                    with a few simple steps
                 </p>
             </div>
             <div id="textSection2">
@@ -182,8 +184,8 @@
             </div>
             <div class="textSectionFull">
                 <div>
-                    <h2>What is the proses</h2>
-                    <p>the proses mnue is for, the top left</p>
+                    <h2>What is the process</h2>
+                    <p>The process menu at the top left corner can help you</p>
                     <div id="prosesDisplayCenter">
                         <div id="prosesDisplay">
                             <div id="lineProsess"></div>
@@ -206,10 +208,10 @@
                 <div>
                     <h2>About</h2>
                     <p class="mainText">
-                        Hello boys and girls and welcome to the Build a bill website. This site was created by the most bored and strange student on earth who goes by the name Yardan Zilberman. In the last weeks of the summer of 2022, when everyone is freaking out at home as an act of extreme stupidity, the website began to be built as an attempt to draw something using only CSS and little by little it grew and expanded until it reached its current form…<br/><br />
-                        This is a fan project base on the AMAZING tv show Gravity Falls. The inspiration came from the first appearance of bill in the show (s1 e19).<br/>
+                        Hello boys and girls and welcome to the Build a bill website. This site was created by the most bored and strange student on earth who goes by the name Yardan Zilberman. In the last weeks of the summer of 2022, when everyone is freaking out at home as an act of extreme stupidity, the website began to be built as an attempt to draw something using only CSS and little by little it grew and expanded until it reached its current form…<br /><br />
+                        This is a fan project based on the AMAZING tv show Gravity Falls. The inspiration came from the first appearance of bill in the show (s1 e19).<br />
                         All the rights to the show original character design and gravity falls in general belong to Disney.<br /><br />
-                        Thank you so much for reading and hop you enjoy the website.
+                        Thank you so much for reading and hope you enjoy the website.
 
                     </p>
                 </div>
@@ -217,7 +219,7 @@
         </main>
 
         <footer>
-            this website created by Yarden Zilberman in 2022 © v0.1
+            this website created by Yarden Zilberman in 2022 © v0.2
             <span>
                 <a href="https://www.instagram.com/hapy_toon/" target="_blank">
                     <img src="pics/icons/instegram icon.svg" />
