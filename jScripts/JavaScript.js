@@ -285,7 +285,6 @@ var FinalAnimation;
 var currectPicList = [];
 
 function selectImgList(imgList) {
-    alert(imgList);
     if (imgList == "demo") {
         currectPicList = randomImgLink;
     }
