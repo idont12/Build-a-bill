@@ -28,7 +28,7 @@
     <link rel="preload" as="image" href="https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=1600" crossorigin="anonymous" />
     <link rel="preload" as="image" href="https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=1600" crossorigin="anonymous" />
 </head>
-<body onload="centerBill(), createAllCards(), processSelction(-1)" onresize="centerBill()" onpointerup="phoneDisplayBill('')" ontouchend="phoneDisplayBill('')">
+<body onload="centerBill(), createAllCards(), processSelction(-1)" onresize="centerBill()" onmouseup="phoneDisplayBill('')" onpointerup ="phoneDisplayBill('')">
     <div id="loudingScreen">
         <div class="loudingScreen-boll"></div>
         <div class="loudingScreen-boll"></div>
@@ -69,9 +69,9 @@
 
                 </div>
             </main>
-            <button id="actionButton" onpointerdown="phoneDisplayBill('open')" ontouchstart="phoneDisplayBill('open')" onpointerup ="phoneDisplayBill('open')" ontouchend="phoneDisplayBill('open')">
+            <!--<button id="actionButton" onmousedown="phoneDisplayBill('open')" onpointerdown="phoneDisplayBill('open')" onmouseup="phoneDisplayBill('open')" onpointerup ="phoneDisplayBill('open')">
                 Display Bill demo <br />(one image only)
-            </button>
+            </button>-->
         </div>
         <div id="displayAnimtaion" class=" close">
 
@@ -217,7 +217,7 @@
         </main>
 
         <footer>
-            this website created by Yarden Zilberman in 2022 © v0.2
+            this website created by Yarden Zilberman in 2022 © v0.1
             <span>
                 <a href="https://www.instagram.com/hapy_toon/" target="_blank">
                     <img src="pics/icons/instegram icon.svg" />
