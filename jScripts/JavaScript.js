@@ -97,6 +97,9 @@ function changeMode(newPage) {
         applayImgToBill(imgCountMax - 1);
         billBody.style.backgroundImage = "none";
     }
+    else if(BillStates[place].BillMod == " animationSetting seeAllMode"){
+        billBody.style.backgroundImage = "none";
+    }
     else if (BillStates[place].BillMod == "") {
         billBody.style.backgroundImage = "none";
     }
