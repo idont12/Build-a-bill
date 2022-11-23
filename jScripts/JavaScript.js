@@ -95,6 +95,7 @@ function changeMode(newPage) {
 
     if (BillStates[place].BillMod == "seeAllMode") {
         applayImgToBill(imgCountMax - 1);
+        billBody.style.backgroundImage = "none";
     }
     else if (BillStates[place].BillMod == "") {
         billBody.style.backgroundImage = "none";
