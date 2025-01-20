@@ -2,7 +2,7 @@
     <p>
     <img src="https://img.shields.io/badge/HTML-web-2ea44f?logo=html5&logoColor=white" alt="HTML Badge"> 
     <img src="https://img.shields.io/badge/Css-Style-ffe600?logo=css" alt="Css Badge">
-    <img src="https://img.shields.io/badge/JS-code-orange?logo=javascript&logoColor=white" alt="JS Badge"> |
+    <img src="https://img.shields.io/badge/JS-code-orange?logo=javascript&logoColor=white" alt="JS Badge">
   </p>
   <p>
     Welcome to <strong>Build-a-Bill</strong>, an interactive website where users can create their own Bill Cipher-inspired animations by adding images and customizing them directly on the site.
