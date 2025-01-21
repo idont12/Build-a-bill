@@ -51,7 +51,7 @@
     <br>
     2. Upload your images and position them as desired.  
     <br>
-    3. Customize animation variables (e.g., rotation, scale, speed) and watch your creation come to life!
+    3. Customize animation variables and watch your creation come to life!
   </p>
   
   <hr>
